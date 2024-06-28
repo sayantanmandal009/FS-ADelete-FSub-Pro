@@ -13,16 +13,16 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "22449327"))
+APP_ID = int(os.environ.get("APP_ID", "24313743"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "33c0257a7df6118f971a5a71415ae81d")
+API_HASH = os.environ.get("API_HASH", "1ce817f26d6b4c9f9f706e318dbf98de")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002212167639"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002154829330"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "7056014024"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "778976952"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -40,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI am a file store bot of @Chalochitra.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7056014024").split()):
+    for x in (os.environ.get("ADMINS", "778976952 7056014024").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -61,7 +61,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7056014024)
+ADMINS.append(778976952)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
